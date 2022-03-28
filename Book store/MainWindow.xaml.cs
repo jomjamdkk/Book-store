@@ -22,10 +22,15 @@ namespace Book_store
     /// </summary>
     public partial class MainWindow : Window
     {
-        private bool Menu_Opening = false;
+
         public MainWindow()
         {
             InitializeComponent();
+            new Customers();
+            new Books();
+            new Transaction();
+            new Employee();
+            this.Content=new MainPage();
         }
         public static void showArrayList(ArrayList DataList){
             string Data = "    Data\n";
@@ -36,25 +41,5 @@ namespace Book_store
             MessageBox.Show(Data);
         }
 
-        private void MenuBut_Click(object sender, RoutedEventArgs e)
-        {
-            if (Menu_Opening) {
-                
-                Storyboard openMenu = (Storyboard)this.Resources["CloseMenu"];
-                openMenu.Begin();
-                Menu_Opening = false;
-            }
-            else
-            {
-                Storyboard closeMenu = (Storyboard)this.Resources["OpenMenu"];
-                closeMenu.Begin();
-                Menu_Opening = true;
-            }
-        }
-
-        private void EditCsInfor_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
