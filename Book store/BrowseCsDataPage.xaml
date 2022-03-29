@@ -7,9 +7,43 @@
       mc:Ignorable="d" 
       d:DesignHeight="1080" d:DesignWidth="1920"
       Title="BrowseCsDataPage">
-
+    <Page.Resources>
+        <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="Chrome" BorderBrush="{x:Null}" BorderThickness="2" CornerRadius="2" Background="{TemplateBinding Property=Background}">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
     <Grid>
-        <TextBox x:Name="SearchBox" HorizontalAlignment="Left" Margin="202,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="348" FontSize="22"/>
+        <Ellipse HorizontalAlignment="Left" Height="75" Margin="100,88,0,0" VerticalAlignment="Top" Width="75" Fill="#FF00D6FF"/>
+        <Ellipse HorizontalAlignment="Left" Height="75" Margin="738,88,0,0" VerticalAlignment="Top" Width="74" Fill="#FF00D6FF"/>
+        <Rectangle HorizontalAlignment="Left" Height="75" Margin="138,88,0,0" VerticalAlignment="Top" Width="642" Fill="#FF00D6FF"/>
+        <Ellipse HorizontalAlignment="Left" Height="48" Margin="112,101,0,0" VerticalAlignment="Top" Width="50" Fill="White"/>
+        <Ellipse HorizontalAlignment="Left" Height="46" Margin="750,102,0,0" VerticalAlignment="Top" Width="50" Fill="#FF00A7FF"/>
+
+        <TextBox x:Name="SearchBox" HorizontalAlignment="Left" Margin="138,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" FontSize="36" Height="50" FontFamily="Segoe UI Light" SelectionBrush="#FFFF86C3" SelectionTextBrush="#FFFF0069" BorderBrush="{x:Null}" Foreground="#FF00183E"/>
+        <Button x:Name="SearchByID" Content="Button" HorizontalAlignment="Left" Margin="560,100,0,0" VerticalAlignment="Top" Click="back_Click" Height="50" Width="72" Background="#FF00A7FF" BorderBrush="{x:Null}" Style="{DynamicResource ButtonStyle1}" Foreground="#FF00183E"/>
+        <Button x:Name="SearchByName" Content="Button" HorizontalAlignment="Left" Margin="640,100,0,0" VerticalAlignment="Top" Click="back_Click" Height="50" Width="72" Background="#FF00A7FF" BorderBrush="{x:Null}" Style="{DynamicResource ButtonStyle1}"/>
+        <Button x:Name="SearchByEmail" Content="Button" HorizontalAlignment="Left" Margin="720,100,0,0" VerticalAlignment="Top" Click="back_Click" Height="50" Width="60" Background="#FF00A7FF" BorderBrush="{x:Null}" Style="{DynamicResource ButtonStyle1}" Foreground="#FF00183E"/>
+        <TextBlock HorizontalAlignment="Left" Margin="400,250,0,0" TextWrapping="Wrap" Text="ID " VerticalAlignment="Top" Height="50" Width="200" Foreground="#FF000C3A" FontSize="36" TextAlignment="Right"/>
+        <TextBlock HorizontalAlignment="Left" Margin="400,310,0,0" TextWrapping="Wrap" Text="Name " VerticalAlignment="Top" Height="50" Width="200" Foreground="#FF000C3A" FontSize="36" TextAlignment="Right"/>
+        <TextBlock HorizontalAlignment="Left" Margin="400,370,0,0" TextWrapping="Wrap" Text="Address " VerticalAlignment="Top" Height="50" Width="200" Foreground="#FF000C3A" FontSize="36" TextAlignment="Right"/>
+        <TextBlock HorizontalAlignment="Left" Margin="400,430,0,0" TextWrapping="Wrap" Text="Email " VerticalAlignment="Top" Height="50" Width="200" Foreground="#FF000C3A" FontSize="36" TextAlignment="Right"/>
+        <Rectangle HorizontalAlignment="Left" Height="2" Margin="60,222,0,0" VerticalAlignment="Top" Width="1800" Fill="#FF70B3FF"/>
+        <Rectangle HorizontalAlignment="Left" Height="230" Margin="712,250,0,0" VerticalAlignment="Top" Width="1" Fill="#FFB0D5FF"/>
+        <TextBlock x:Name="IDBlock" HorizontalAlignment="Left" Margin="724,250,0,0" TextWrapping="Wrap" Text="ID " VerticalAlignment="Top" Height="50" Width="200" Foreground="#FF3C476F" FontSize="36" TextAlignment="Left" FontFamily="Segoe UI Light"/>
+        <TextBlock x:Name="NameBlock" HorizontalAlignment="Left" Margin="724,310,0,0" TextWrapping="Wrap" Text="Name " VerticalAlignment="Top" Height="50" Width="200" Foreground="#FF3C476F" FontSize="36" TextAlignment="Left" FontFamily="Segoe UI Light"/>
+        <TextBlock x:Name="AddressBlock" HorizontalAlignment="Left" Margin="724,370,0,0" TextWrapping="Wrap" Text="Address " VerticalAlignment="Top" Height="50" Width="200" Foreground="#FF3C476F" FontSize="36" TextAlignment="Left" FontFamily="Segoe UI Light"/>
+        <TextBlock x:Name="EmailBlock" HorizontalAlignment="Left" Margin="724,430,0,0" TextWrapping="Wrap" Text="Email " VerticalAlignment="Top" Height="50" Width="200" Foreground="#FF3C476F" FontSize="36" TextAlignment="Left" FontFamily="Segoe UI Light"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="742,505,0,0" VerticalAlignment="Top" Width="1100" Fill="#FFB0D5FF"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="82,505,0,0" VerticalAlignment="Top" Width="600" Fill="#FFB0D5FF"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="40" Margin="40,527,0,0" VerticalAlignment="Top" Width="1840"/>
 
     </Grid>
 </Page>
