@@ -7,14 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Book_store
-{
-    public class Transaction
-    {
-        public Transaction()
-        {
-            using (SqliteConnection db = new SqliteConnection("Filename=StoreData.db"))
-            {
+namespace Book_store {
+    public class Transaction {
+        public Transaction() {
+            using (SqliteConnection db = new SqliteConnection("Filename=StoreData.db")) {
                 db.Open();
 
                 string createTransactionTable = "CREATE TABLE IF NOT EXISTS PurchaseHistory" +
@@ -34,16 +30,13 @@ namespace Book_store
 
 
 
-        public static void add(int isbn, int id, int Quantity)
-        {
+        public static void add(int isbn, int id, int Quantity) {
             using (SqliteConnection db =
-              new SqliteConnection("Filename=StoreData.db"))
-            {
+              new SqliteConnection("Filename=StoreData.db")) {
                 ArrayList BookData = new ArrayList();
                 BookData = Books.get(isbn);
                 int Remaining = int.Parse(BookData[4].ToString());
-                if (Quantity>Remaining) 
-                { MessageBox.Show("Not enough Book"); return; }
+                if (Quantity > Remaining) { MessageBox.Show("Not enough Book"); return; }
                 int price = int.Parse(BookData[3].ToString());
                 int totalPrice = Quantity * price;
                 db.Open();
@@ -60,25 +53,22 @@ namespace Book_store
 
                 insertCommand.ExecuteReader();
                 db.Close();
-                Books.set(isbn, "Remaining", (int.Parse(BookData[4].ToString())-Quantity).ToString());
+                Books.set(isbn, "Remaining", (int.Parse(BookData[4].ToString()) - Quantity).ToString());
             }
         }
 
 
 
 
-        public static ArrayList get(int id)
-        {
+        public static ArrayList get(int id) {
             ArrayList entries = new ArrayList();
             using (SqliteConnection db =
-               new SqliteConnection("Filename=StoreData.db"))
-            {
+               new SqliteConnection("Filename=StoreData.db")) {
                 db.Open();
                 SqliteCommand selectCommand = new SqliteCommand
                     ("SELECT * from PurchaseHistory WHERE Customer_Id = " + id, db);
                 SqliteDataReader query = selectCommand.ExecuteReader();
-                while (query.Read())
-                {
+                while (query.Read()) {
                     entries.Add(query.GetString(0));
                     entries.Add(query.GetString(1));
                     entries.Add(query.GetString(2));
@@ -88,8 +78,7 @@ namespace Book_store
             }
             return entries;
         }
-        public static string getDateTime()
-        {
+        public static string getDateTime() {
             return DateTime.Now.ToString() + "  UTC+7";
         }
     }

@@ -6,21 +6,17 @@ using System.Threading.Tasks;
 using Microsoft.Data.Sqlite;
 using System.Collections;
 
-namespace Book_store
-{
-    internal class Employee
-    {
-        public Employee()
-        {
-            using (SqliteConnection db = new SqliteConnection("Filename=StoreData.db"))
-            {
+namespace Book_store {
+    internal class Employee {
+        public Employee() {
+            using (SqliteConnection db = new SqliteConnection("Filename=StoreData.db")) {
                 db.Open();
 
                 string creatEmployeeTable = "CREATE TABLE IF NOT EXISTS Employee" +
                     "(Employee_ID BIT PRIMARY KEY," +
                     "Employee_Name NVARCHAR(128) NOT NULL," +
                     "Address NVARCHAR(128) NOT NULL," +
-                    "NationalID NVARCHAR (13) UNIQUE,"+
+                    "NationalID NVARCHAR (13) UNIQUE," +
                     "Password NVARCHAR(64) NOT NULL)";
 
                 SqliteCommand createTable = new SqliteCommand(creatEmployeeTable, db);
@@ -34,11 +30,9 @@ namespace Book_store
 
 
 
-        public static void add(int id, string name, string address, int NationalID,int pw)
-        {
+        public static void add(int id, string name, string address, int NationalID, int pw) {
             using (SqliteConnection db =
-              new SqliteConnection("Filename=StoreData.db"))
-            {
+              new SqliteConnection("Filename=StoreData.db")) {
                 db.Open();
                 SqliteCommand insertCommand = new SqliteCommand();
                 insertCommand.Connection = db;
@@ -63,11 +57,9 @@ namespace Book_store
 
 
 
-        public static void set(int id, string fieldName, string data)
-        {
+        public static void set(int id, string fieldName, string data) {
             using (SqliteConnection db =
-              new SqliteConnection("Filename=StoreData.db"))
-            {
+              new SqliteConnection("Filename=StoreData.db")) {
                 db.Open();
                 SqliteCommand updateCommand = new SqliteCommand();
                 updateCommand.Connection = db;
@@ -85,18 +77,15 @@ namespace Book_store
 
 
 
-        public static ArrayList get(int id)
-        {
+        public static ArrayList get(int id) {
             ArrayList entries = new ArrayList();
             using (SqliteConnection db =
-               new SqliteConnection("Filename=StoreData.db"))
-            {
+               new SqliteConnection("Filename=StoreData.db")) {
                 db.Open();
                 SqliteCommand selectCommand = new SqliteCommand
                     ("SELECT * from Employee WHERE Employee_ID = " + id, db);
                 SqliteDataReader query = selectCommand.ExecuteReader();
-                while (query.Read())
-                {
+                while (query.Read()) {
                     entries.Add(query.GetString(0));
                     entries.Add(query.GetString(1));
                     entries.Add(query.GetString(2));

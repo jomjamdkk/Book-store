@@ -3,14 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using Microsoft.Data.Sqlite;
 
-namespace Book_store
-{
-    public class Customers
-    {
-        public Customers()
-        {
-            using (SqliteConnection db = new SqliteConnection("Filename=StoreData.db"))
-            {
+namespace Book_store {
+    public class Customers {
+        public Customers() {
+            using (SqliteConnection db = new SqliteConnection("Filename=StoreData.db")) {
                 db.Open();
 
                 string createCustomersTable = "CREATE TABLE IF NOT EXISTS Customers" +
@@ -31,11 +27,9 @@ namespace Book_store
 
 
 
-        public static void add(int id, string name, string address, string email)
-        {
+        public static void add(int id, string name, string address, string email) {
             using (SqliteConnection db =
-              new SqliteConnection("Filename=StoreData.db"))
-            {
+              new SqliteConnection("Filename=StoreData.db")) {
                 db.Open();
                 SqliteCommand insertCommand = new SqliteCommand();
                 insertCommand.Connection = db;
@@ -57,11 +51,9 @@ namespace Book_store
 
 
 
-        public static void set(int id, string fieldName, string data)
-        {
+        public static void set(int id, string fieldName, string data) {
             using (SqliteConnection db =
-              new SqliteConnection("Filename=StoreData.db"))
-            {
+              new SqliteConnection("Filename=StoreData.db")) {
                 db.Open();
                 SqliteCommand updateCommand = new SqliteCommand();
                 updateCommand.Connection = db;
@@ -79,18 +71,15 @@ namespace Book_store
 
 
 
-        public static ArrayList get(int id)
-        {
+        public static ArrayList get(int id) {
             ArrayList entries = new ArrayList();
             using (SqliteConnection db =
-               new SqliteConnection("Filename=StoreData.db"))
-            {
+               new SqliteConnection("Filename=StoreData.db")) {
                 db.Open();
                 SqliteCommand selectCommand = new SqliteCommand
                     ("SELECT * from Customers WHERE Customer_id = " + id, db);
                 SqliteDataReader query = selectCommand.ExecuteReader();
-                while (query.Read())
-                {
+                while (query.Read()) {
                     entries.Add(query.GetString(0));
                     entries.Add(query.GetString(1));
                     entries.Add(query.GetString(2));
@@ -108,18 +97,15 @@ namespace Book_store
 
 
 
-        public static ArrayList get(string email)
-        {
+        public static ArrayList get(string email) {
             ArrayList entries = new ArrayList();
             using (SqliteConnection db =
-               new SqliteConnection("Filename=StoreData.db"))
-            {
+               new SqliteConnection("Filename=StoreData.db")) {
                 db.Open();
                 SqliteCommand selectCommand = new SqliteCommand
                     ("SELECT * from Customers WHERE Email = " + email, db);
                 SqliteDataReader query = selectCommand.ExecuteReader();
-                while (query.Read())
-                {
+                while (query.Read()) {
                     entries.Add(query.GetString(0));
                     entries.Add(query.GetString(1));
                     entries.Add(query.GetString(2));
@@ -136,11 +122,9 @@ namespace Book_store
 
 
 
-        public static void delete(int id)
-        {
+        public static void delete(int id) {
             using (SqliteConnection db =
-                new SqliteConnection("Filename=StoreData.db"))
-            {
+                new SqliteConnection("Filename=StoreData.db")) {
                 db.Open();
                 SqliteCommand deleteCommand = new SqliteCommand();
                 deleteCommand.Connection = db;

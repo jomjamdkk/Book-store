@@ -6,14 +6,10 @@ using System.Collections;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Book_store
-{
-    public class Books
-    {
-        public Books()
-        {
-            using (SqliteConnection db = new SqliteConnection("Filename=StoreData.db"))
-            {
+namespace Book_store {
+    public class Books {
+        public Books() {
+            using (SqliteConnection db = new SqliteConnection("Filename=StoreData.db")) {
                 db.Open();
 
                 string createBooksTable = "CREATE TABLE IF NOT EXISTS Books" +
@@ -34,11 +30,9 @@ namespace Book_store
 
 
 
-        public static void add(int isbn, string title, string description, float price, int remaining)
-        {
+        public static void add(int isbn, string title, string description, float price, int remaining) {
             using (SqliteConnection db =
-              new SqliteConnection("Filename=StoreData.db"))
-            {
+              new SqliteConnection("Filename=StoreData.db")) {
                 db.Open();
                 SqliteCommand insertCommand = new SqliteCommand();
                 insertCommand.Connection = db;
@@ -59,11 +53,9 @@ namespace Book_store
 
 
 
-        public static void set(int isbn, string fieldName, string data)
-        {
+        public static void set(int isbn, string fieldName, string data) {
             using (SqliteConnection db =
-              new SqliteConnection("Filename=StoreData.db"))
-            {
+              new SqliteConnection("Filename=StoreData.db")) {
                 db.Open();
                 SqliteCommand updateCommand = new SqliteCommand();
                 updateCommand.Connection = db;
@@ -78,18 +70,15 @@ namespace Book_store
 
 
 
-        public static ArrayList get(int isbn)
-        {
+        public static ArrayList get(int isbn) {
             ArrayList entries = new ArrayList();
             using (SqliteConnection db =
-               new SqliteConnection("Filename=StoreData.db"))
-            {
+               new SqliteConnection("Filename=StoreData.db")) {
                 db.Open();
                 SqliteCommand selectCommand = new SqliteCommand
                     ("SELECT * from Books WHERE ISBN = " + isbn, db);
                 SqliteDataReader query = selectCommand.ExecuteReader();
-                while (query.Read())
-                {
+                while (query.Read()) {
                     entries.Add(query.GetString(0));//ISBN
                     entries.Add(query.GetString(1));//Title
                     entries.Add(query.GetString(2));//Description
@@ -104,11 +93,9 @@ namespace Book_store
 
 
 
-        public static void delete(int id)
-        {
+        public static void delete(int id) {
             using (SqliteConnection db =
-                new SqliteConnection("Filename=StoreData.db"))
-            {
+                new SqliteConnection("Filename=StoreData.db")) {
                 db.Open();
                 SqliteCommand deleteCommand = new SqliteCommand();
                 deleteCommand.Connection = db;

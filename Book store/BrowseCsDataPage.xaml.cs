@@ -13,21 +13,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Book_store
-{
+namespace Book_store {
     /// <summary>
     /// Interaction logic for BrowseCsDataPage.xaml
     /// </summary>
-    public partial class BrowseCsDataPage : Page
-    {
-        public BrowseCsDataPage()
-        {
+    public partial class BrowseCsDataPage : Page {
+        public BrowseCsDataPage() {
             InitializeComponent();
         }
 
-        private void back_Click(object sender, RoutedEventArgs e)
-        {
-            Content = null; 
+        private void back_Click(object sender, RoutedEventArgs e) {
+            Content = null;
         }
     }
 }
