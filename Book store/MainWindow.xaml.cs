@@ -20,9 +20,10 @@ namespace Book_store {
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window {
-
-        public MainWindow() {
+        int ID;
+        public MainWindow(int id) {
             InitializeComponent();
+            ID = id;
             new Customers();
             new Books();
             new Transaction();

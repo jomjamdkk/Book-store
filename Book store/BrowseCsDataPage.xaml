@@ -43,7 +43,7 @@
         <TextBlock x:Name="EmailBlock" HorizontalAlignment="Left" Margin="724,430,0,0" TextWrapping="Wrap" Text="Email " VerticalAlignment="Top" Height="50" Width="200" Foreground="#FF3C476F" FontSize="36" TextAlignment="Left" FontFamily="Segoe UI Light"/>
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="742,505,0,0" VerticalAlignment="Top" Width="1100" Fill="#FFB0D5FF"/>
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="82,505,0,0" VerticalAlignment="Top" Width="600" Fill="#FFB0D5FF"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="40" Margin="40,527,0,0" VerticalAlignment="Top" Width="1840"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="775,-136,0,0" VerticalAlignment="Top" Height="53" Width="117" Background="#FF00A7FF" Style="{DynamicResource ButtonStyle1}"/>
 
     </Grid>
 </Page>

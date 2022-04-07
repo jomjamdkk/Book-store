@@ -26,7 +26,8 @@ namespace Book_store
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckPassword(int.Parse(IDBox.Text), PWBox.Password)) { GoMain(); Close(); }
+            int id = int.Parse(IDBox.Text);
+            if (CheckPassword(id, PWBox.Password)) { GoMain(id); Close(); }
             else { PWBox.Foreground = new SolidColorBrush(Colors.Red); }
         }
 
@@ -39,7 +40,7 @@ namespace Book_store
                 Employee.set(EID,"NationalID",NIDBox.Text);
                 Employee.set(EID,"Password",NewPassword_Box.Text);
                 
-                GoMain();Close();
+                GoMain(EID);Close();
             }
             else { OldPassword_Box.Foreground = new SolidColorBrush(Colors.Red); }
         }
@@ -49,9 +50,9 @@ namespace Book_store
             if (E_Data[4].ToString() == Password){ return true; }
             else{ return false; }
         }
-        private void GoMain() 
+        private void GoMain(int id) 
         {
-            MainWindow main = new MainWindow();
+            MainWindow main = new MainWindow(id);
             main.Show();
         }
     }
