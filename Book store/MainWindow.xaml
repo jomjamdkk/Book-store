@@ -11,117 +11,143 @@
     <Window.Resources>
         <Storyboard x:Key="OpenMenu">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="501"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="400"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="502"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="501"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="501"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBlock2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="501"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBlock3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="501"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="3"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="3"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="3"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBlock2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="3"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBlock3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="3"/>
-            </DoubleAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFDADADA"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFDADADA"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFDADADA"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFDADADA"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFDADADA"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFDADADA"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetName="ellipse4" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFDADADA"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetName="rectangle3" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFDADADA"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFDADADA"/>
-            </ColorAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="BrowseCsData" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="507"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="450"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="500"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Transac" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="507"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="450"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="500"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="BuyBook" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="507"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="450"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="500"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="BrowseBookData" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="507"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="450"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="500"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="BrowseCsData" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="12"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="EditStoreData" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="450"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="500"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Transac" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="12"/>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFECE8E8"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFECE8E8"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFECE8E8"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFECE8E8"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFECE8E8"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFECE8E8"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="ellipse4" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFECE8E8"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="rectangle3" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFECE8E8"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFECE8E8"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.1"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="BuyBook" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="12"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-25"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="BrowseBookData" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="12"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="25"/>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="45"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-45"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="15"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-15"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="8"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="2"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="2"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-8"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="8"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-2"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-8"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-2"/>
+            </DoubleAnimationUsingKeyFrames>
+
+
         </Storyboard>
         <Storyboard x:Key="CloseMenu">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-501"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-400"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-502"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-501"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="BrowseCsData" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-450"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-500"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-501"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Transac" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-450"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-500"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBlock2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-501"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="BuyBook" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-450"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-500"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBlock3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-501"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="BrowseBookData" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-450"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-500"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-3"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-3"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-3"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBlock2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-3"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBlock3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-3"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="EditStoreData" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-450"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-500"/>
             </DoubleAnimationUsingKeyFrames>
             <ColorAnimationUsingKeyFrames Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
                 <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FF00D6FF"/>
@@ -150,30 +176,55 @@
             <ColorAnimationUsingKeyFrames Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
                 <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FF00D6FF"/>
             </ColorAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="BrowseCsData" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-507"/>
+
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.0000000" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.1500000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Transac" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-507"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="BuyBook" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-507"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="BrowseBookData" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-507"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="BrowseCsData" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-12"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Transac" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-12"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="BuyBook" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-12"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="BrowseBookData" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-12"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+
+
         </Storyboard>
         <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
             <Setter Property="Template">
@@ -188,10 +239,10 @@
         </Style>
     </Window.Resources>
 
+
     <Grid>
         <Frame x:Name="Main" Margin="0,0,0,0"/>
-
-        <Rectangle x:Name="rectangle" HorizontalAlignment="Left" Height="1080" Stroke="#FF00D6FF" VerticalAlignment="Top" Width="464" Fill="#FF00D6FF" Margin="-504,4,0,0" RenderTransformOrigin="0.5,0.5">
+        <Rectangle x:Name="rectangle" HorizontalAlignment="Left" Height="1080" Stroke="#FF00D6FF" VerticalAlignment="Top" Width="464" Fill="#FF00D6FF" Margin="-502,0,0,0" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -201,57 +252,98 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="-480,172,0,0" TextWrapping="Wrap" Text="Browse customer data" VerticalAlignment="Top" Width="416" Height="50" FontSize="36" Foreground="White" RenderTransformOrigin="0.5,0.5">
-            <TextBlock.RenderTransform>
+        <Ellipse x:Name="ellipse" HorizontalAlignment="Left" Height="10" Margin="27,30,0,0" VerticalAlignment="Top" Width="10" Fill="#FF00D6FF" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
                     <RotateTransform/>
                     <TranslateTransform/>
                 </TransformGroup>
-            </TextBlock.RenderTransform>
-        </TextBlock>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="-480,272,0,0" TextWrapping="Wrap" Text="Transaction" VerticalAlignment="Top" Width="416" Height="50" FontSize="36" Foreground="White" RenderTransformOrigin="0.5,0.5">
-            <TextBlock.RenderTransform>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Rectangle x:Name="rectangle1" HorizontalAlignment="Left" Height="10" Margin="32,30,0,0" VerticalAlignment="Top" Width="50" Fill="#FF00D6FF" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
                     <RotateTransform/>
                     <TranslateTransform/>
                 </TransformGroup>
-            </TextBlock.RenderTransform>
-        </TextBlock>
-        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="-480,372,0,0" TextWrapping="Wrap" Text="Buy book" VerticalAlignment="Top" Width="416" Height="50" FontSize="36" Foreground="White" RenderTransformOrigin="0.5,0.5">
-            <TextBlock.RenderTransform>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Ellipse x:Name="ellipse1" HorizontalAlignment="Left" Height="10" Margin="77,30,0,0" VerticalAlignment="Top" Width="10" Fill="#FF00D6FF" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
                     <RotateTransform/>
                     <TranslateTransform/>
                 </TransformGroup>
-            </TextBlock.RenderTransform>
-        </TextBlock>
-        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="-480,472,0,0" TextWrapping="Wrap" Text="Browse book data" VerticalAlignment="Top" Width="416" Height="50" FontSize="36" Foreground="White" RenderTransformOrigin="0.5,0.5">
-            <TextBlock.RenderTransform>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="ellipse2" HorizontalAlignment="Left" Height="10" Margin="27,45,0,0" VerticalAlignment="Top" Width="10" Fill="#FF00D6FF" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
                     <RotateTransform/>
                     <TranslateTransform/>
                 </TransformGroup>
-            </TextBlock.RenderTransform>
-        </TextBlock>
-        <Ellipse x:Name="ellipse" HorizontalAlignment="Left" Height="10" Margin="27,30,0,0" VerticalAlignment="Top" Width="10" Fill="#FF00D6FF"/>
-        <Rectangle x:Name="rectangle1" HorizontalAlignment="Left" Height="10" Margin="32,30,0,0" VerticalAlignment="Top" Width="50" Fill="#FF00D6FF"/>
-        <Ellipse x:Name="ellipse1" HorizontalAlignment="Left" Height="10" Margin="77,30,0,0" VerticalAlignment="Top" Width="10" Fill="#FF00D6FF"/>
-        <Ellipse x:Name="ellipse2" HorizontalAlignment="Left" Height="10" Margin="27,45,0,0" VerticalAlignment="Top" Width="10" Fill="#FF00D6FF"/>
-        <Rectangle x:Name="rectangle2" HorizontalAlignment="Left" Height="10" Margin="32,45,0,0" VerticalAlignment="Top" Width="50" Fill="#FF00D6FF"/>
-        <Ellipse x:Name="ellipse3" HorizontalAlignment="Left" Height="10" Margin="77,45,0,0" VerticalAlignment="Top" Width="10" Fill="#FF00D6FF"/>
-        <Ellipse x:Name="ellipse4" HorizontalAlignment="Left" Height="10" Margin="27,60,0,0" VerticalAlignment="Top" Width="10" Fill="#FF00D6FF"/>
-        <Rectangle x:Name="rectangle3" HorizontalAlignment="Left" Height="10" Margin="32,60,0,0" VerticalAlignment="Top" Width="50" Fill="#FF00D6FF"/>
-        <Ellipse x:Name="ellipse5" HorizontalAlignment="Left" Height="10" Margin="77,60,0,0" VerticalAlignment="Top" Width="10" Fill="#FF00D6FF"/>
-        <Button x:Name="MenuBut" Content="ffffffffffffffffffffffff&#xD;&#xA;ffffffffffffffffffffffffffffff&#xD;&#xA;ffffffffffffffffffffffffffffff&#xD;&#xA;ffffffffffffffffffffffffffffff&#xD;&#xA;ffffffffffffffffffffffffffffff&#xD;&#xA;ffffffffffffffffffffffffffffff&#xD;&#xA;" HorizontalAlignment="Left" Height="81" Margin="-17,21,0,0" VerticalAlignment="Top" Width="148" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="MenuBut_Click" Style="{DynamicResource ButtonStyle1}"/>
-        <Button x:Name="BrowseCsData" Style="{DynamicResource ButtonStyle1}" Content="ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff&#xD;&#xA;fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff&#xD;&#xA;ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff&#xD;&#xA;fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff" HorizontalAlignment="Left" Margin="-480,162,0,0" VerticalAlignment="Top" Height="61" Width="416" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" RenderTransformOrigin="0.5,0.5" Click="BrowseCsData_Click">
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Rectangle x:Name="rectangle2" HorizontalAlignment="Left" Height="10" Margin="32,45,0,0" VerticalAlignment="Top" Width="50" Fill="#FF00D6FF" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Ellipse x:Name="ellipse3" HorizontalAlignment="Left" Height="10" Margin="77,45,0,0" VerticalAlignment="Top" Width="10" Fill="#FF00D6FF" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="ellipse4" HorizontalAlignment="Left" Height="10" Margin="27,60,0,0" VerticalAlignment="Top" Width="10" Fill="#FF00D6FF" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Rectangle x:Name="rectangle3" HorizontalAlignment="Left" Height="10" Margin="32,60,0,0" VerticalAlignment="Top" Width="50" Fill="#FF00D6FF" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Ellipse x:Name="ellipse5" HorizontalAlignment="Left" Height="10" Margin="77,60,0,0" VerticalAlignment="Top" Width="10" Fill="#FF00D6FF" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Button x:Name="MenuBut" Content="ffffffffffffffffffffffff&#xD;&#xA;ffffffffffffffffffffffffffffff&#xD;&#xA;ffffffffffffffffffffffffffffff&#xD;&#xA;ffffffffffffffffffffffffffffff&#xD;&#xA;ffffffffffffffffffffffffffffff&#xD;&#xA;ffffffffffffffffffffffffffffff&#xD;&#xA;" HorizontalAlignment="Left" Height="81" Margin="0,10,0,0" VerticalAlignment="Top" Width="148" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="MenuBut_Click" Style="{DynamicResource ButtonStyle1}"/>
+        <Button x:Name="BrowseCsData" Style="{DynamicResource ButtonStyle1}" Content="Browse customer data" HorizontalAlignment="Left" Margin="-480,160,0,0" VerticalAlignment="Top" Height="61" Width="416" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" RenderTransformOrigin="0.5,0.5" Click="BrowseCsData_Click" FontSize="40" HorizontalContentAlignment="Right">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -261,7 +353,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="Transac" Style="{DynamicResource ButtonStyle1}" Content="ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff&#xA;fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff&#xA;ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff&#xA;fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff" HorizontalAlignment="Left" Margin="-480,262,0,0" VerticalAlignment="Top" Height="61" Width="416" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" RenderTransformOrigin="0.5,0.5">
+        <Button x:Name="Transac" Style="{DynamicResource ButtonStyle1}" Content="Transaction" HorizontalAlignment="Left" Margin="-480,260,0,0" VerticalAlignment="Top" Height="61" Width="416" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" RenderTransformOrigin="0.5,0.5" FontSize="40" HorizontalContentAlignment="Right">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -271,7 +363,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="BuyBook" Style="{DynamicResource ButtonStyle1}" Content="ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff&#xA;fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff&#xA;ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff&#xA;fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff" HorizontalAlignment="Left" Margin="-480,362,0,0" VerticalAlignment="Top" Height="61" Width="416" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" RenderTransformOrigin="0.5,0.5">
+        <Button x:Name="BuyBook" Style="{DynamicResource ButtonStyle1}" Content="Buy" HorizontalAlignment="Left" Margin="-480,360,0,0" VerticalAlignment="Top" Height="61" Width="416" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" RenderTransformOrigin="0.5,0.5" FontSize="40" HorizontalContentAlignment="Right">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -281,7 +373,17 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="BrowseBookData" Style="{DynamicResource ButtonStyle1}" Content="ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff&#xA;fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff&#xA;ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff&#xA;fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff" HorizontalAlignment="Left" Margin="-480,462,0,0" VerticalAlignment="Top" Height="61" Width="416" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" RenderTransformOrigin="0.5,0.5">
+        <Button x:Name="BrowseBookData" Style="{DynamicResource ButtonStyle1}" Content="Browse book data" HorizontalAlignment="Left" Margin="-480,460,0,0" VerticalAlignment="Top" Height="61" Width="416" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" RenderTransformOrigin="0.5,0.5" FontSize="40" HorizontalContentAlignment="Right">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="EditStoreData" Style="{DynamicResource ButtonStyle1}" Content="Edit store data" HorizontalAlignment="Left" Margin="-480,560,0,0" VerticalAlignment="Top" Height="61" Width="416" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" RenderTransformOrigin="0.5,0.5" FontSize="40" HorizontalContentAlignment="Right">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

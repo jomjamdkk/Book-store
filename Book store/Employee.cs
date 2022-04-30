@@ -13,7 +13,7 @@ namespace Book_store {
                 db.Open();
 
                 string creatEmployeeTable = "CREATE TABLE IF NOT EXISTS Employee" +
-                    "(Employee_ID BIT PRIMARY KEY," +
+                    "(Employee_ID TINYINT PRIMARY KEY," +
                     "Employee_Name NVARCHAR(128) NOT NULL," +
                     "Address NVARCHAR(128) NOT NULL," +
                     "NationalID NVARCHAR (13) UNIQUE," +
@@ -42,7 +42,7 @@ namespace Book_store {
                 insertCommand.Parameters.AddWithValue("@Employee_name", name);
                 insertCommand.Parameters.AddWithValue("@Employee_address", address);
                 insertCommand.Parameters.AddWithValue("@Employee_NationalId", NationalID);
-                insertCommand.Parameters.AddWithValue("@PW", pw);
+                insertCommand.Parameters.AddWithValue("@PW", pw.ToString());
 
 
 

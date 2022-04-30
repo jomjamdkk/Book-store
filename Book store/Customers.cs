@@ -84,7 +84,6 @@ namespace Book_store {
                     entries.Add(query.GetString(1));
                     entries.Add(query.GetString(2));
                     entries.Add(query.GetString(3));
-                    entries.Add(query.GetString(4));
                 }
                 db.Close();
             }
