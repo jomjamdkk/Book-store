@@ -363,6 +363,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
+
         <Button x:Name="BuyBook" Style="{DynamicResource ButtonStyle1}" Content="Buy" HorizontalAlignment="Left" Margin="-480,360,0,0" VerticalAlignment="Top" Height="61" Width="416" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" RenderTransformOrigin="0.5,0.5" FontSize="40" HorizontalContentAlignment="Right">
             <Button.RenderTransform>
                 <TransformGroup>

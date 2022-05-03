@@ -102,7 +102,7 @@ namespace Book_store {
                new SqliteConnection("Filename=StoreData.db")) {
                 db.Open();
                 SqliteCommand selectCommand = new SqliteCommand
-                    ("SELECT * from Customers WHERE Email = " + email, db);
+                    ("SELECT * from Customers WHERE Email = \"" + email + "\"", db);
                 SqliteDataReader query = selectCommand.ExecuteReader();
                 while (query.Read()) {
                     entries.Add(query.GetString(0));
