@@ -73,13 +73,14 @@ namespace Book_store {
                     entries.Add(query.GetString(1));
                     entries.Add(query.GetString(2));
                     entries.Add(query.GetString(3));
+                    entries.Add(query.GetString(4));
                 }
                 db.Close();
             }
             return entries;
         }
         public static string getDateTime() {
-            return DateTime.Now.ToString() + "  UTC+7";
+            return DateTime.Now.ToString("dd/MM/yyyy  HH:mm");
         }
     }
 }

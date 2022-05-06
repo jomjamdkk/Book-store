@@ -30,11 +30,13 @@ namespace Book_store
             new Books();
             new Transaction();
             new Employee();
+            Main.NavigationUIVisibility = NavigationUIVisibility.Hidden;
+            Transaction.add(1,1,1);
+
             /*Random ran = new Random();
             for (int i = 1; i<=20;i++) {
                 Employee.add(i,"","",i,ran.Next(100000,1000000)); 
             }*/
-            Main.NavigationUIVisibility = NavigationUIVisibility.Hidden;
         }
         public static void showArrayList(ArrayList DataList)
         {
@@ -74,6 +76,17 @@ namespace Book_store
             Storyboard closeMenu = (Storyboard)this.Resources["CloseMenu"];
             closeMenu.Begin();
             Menu_Opening = false;
+        }
+
+        private void Transac_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content=null;
+            Main.Content = new TransactionPage();
+        }
+
+        private void Back(object sender, RoutedEventArgs e)
+        {
+            Main.Content = null;
         }
     }
 }

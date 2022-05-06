@@ -22,10 +22,6 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="450"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="500"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="BuyBook" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="450"/>
-                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="500"/>
-            </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="BrowseBookData" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
                 <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="450"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="500"/>
@@ -134,10 +130,6 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-500"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Transac" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-450"/>
-                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-500"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="BuyBook" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
                 <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-450"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-500"/>
             </DoubleAnimationUsingKeyFrames>
@@ -353,7 +345,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="Transac" Style="{DynamicResource ButtonStyle1}" Content="Transaction" HorizontalAlignment="Left" Margin="-480,260,0,0" VerticalAlignment="Top" Height="61" Width="416" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" RenderTransformOrigin="0.5,0.5" FontSize="40" HorizontalContentAlignment="Right">
+        <Button x:Name="Transac" Style="{DynamicResource ButtonStyle1}" Content="Transaction" HorizontalAlignment="Left" Margin="-480,260,0,0" VerticalAlignment="Top" Height="61" Width="416" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" RenderTransformOrigin="0.5,0.5" FontSize="40" HorizontalContentAlignment="Right" Click="Transac_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -363,7 +355,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="BuyBook" Style="{DynamicResource ButtonStyle1}" Content="Buy" HorizontalAlignment="Left" Margin="-480,360,0,0" VerticalAlignment="Top" Height="61" Width="416" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" RenderTransformOrigin="0.5,0.5" FontSize="40" HorizontalContentAlignment="Right">
+        <Button x:Name="BrowseBookData" Style="{DynamicResource ButtonStyle1}" Content="Browse book data" HorizontalAlignment="Left" Margin="-480,360,0,0" VerticalAlignment="Top" Height="61" Width="416" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" RenderTransformOrigin="0.5,0.5" FontSize="40" HorizontalContentAlignment="Right">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -373,7 +365,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="BrowseBookData" Style="{DynamicResource ButtonStyle1}" Content="Browse book data" HorizontalAlignment="Left" Margin="-480,460,0,0" VerticalAlignment="Top" Height="61" Width="416" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" RenderTransformOrigin="0.5,0.5" FontSize="40" HorizontalContentAlignment="Right">
+        <Button x:Name="EditStoreData" Style="{DynamicResource ButtonStyle1}" Content="Edit store data" HorizontalAlignment="Left" Margin="-480,460,0,0" VerticalAlignment="Top" Height="61" Width="416" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" RenderTransformOrigin="0.5,0.5" FontSize="40" HorizontalContentAlignment="Right">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -383,16 +375,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="EditStoreData" Style="{DynamicResource ButtonStyle1}" Content="Edit store data" HorizontalAlignment="Left" Margin="-480,560,0,0" VerticalAlignment="Top" Height="61" Width="416" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" RenderTransformOrigin="0.5,0.5" FontSize="40" HorizontalContentAlignment="Right">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
+        <Button x:Name="Back_btn" Content="Back" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Height="38" Width="60" Style="{DynamicResource ButtonStyle1}" Background="#FF00A7FF" Click="Back"/>
 
     </Grid>
 </Window>
