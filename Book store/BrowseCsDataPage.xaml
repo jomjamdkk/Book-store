@@ -28,7 +28,7 @@
         <Ellipse HorizontalAlignment="Left" Height="46" Margin="750,102,0,0" VerticalAlignment="Top" Width="50" Fill="#FF00A7FF"/>
 
 
-        <TextBox x:Name="SearchBox" HorizontalAlignment="Left" Margin="138,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" FontSize="24" Height="50" FontFamily="Segoe UI Light" SelectionBrush="#FFFF86C3" SelectionTextBrush="#FFFF0069" BorderBrush="{x:Null}" Foreground="#FF00183E" BorderThickness="0" Text="ID or Email" TextAlignment="Left" VerticalContentAlignment="Center" GotFocus="SearchBox_GotFocus"/>
+        <TextBox x:Name="SearchBox" HorizontalAlignment="Left" Margin="138,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" FontSize="24" Height="48" FontFamily="Segoe UI Light" SelectionBrush="#FFFF86C3" SelectionTextBrush="#FFFF0069" BorderBrush="{x:Null}" Foreground="#FF00183E" BorderThickness="0" Text="ID or Email" TextAlignment="Left" VerticalContentAlignment="Center" GotFocus="SearchBox_GotFocus"/>
         <Button x:Name="SearchByID" Content="ID" HorizontalAlignment="Left" Margin="560,100,0,0" VerticalAlignment="Top" Height="50" Width="100" Background="#FF00A7FF" BorderBrush="{x:Null}" Style="{DynamicResource ButtonStyle1}" Foreground="#FF00183E" Click="SearchByID_Click"/>
         <Button x:Name="SearchByEmail" Content="Email" HorizontalAlignment="Left" Margin="690,100,0,0" VerticalAlignment="Top" Height="50" Width="90" Background="#FF00A7FF" BorderBrush="{x:Null}" Style="{DynamicResource ButtonStyle1}" Foreground="#FF00183E" Click="SearchByEmail_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="400,250,0,0" TextWrapping="Wrap" Text="ID " VerticalAlignment="Top" Height="50" Width="200" Foreground="#FF000C3A" FontSize="36" TextAlignment="Right"/>

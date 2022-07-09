@@ -31,21 +31,22 @@ namespace Book_store
             new Transaction();
             new Employee();
             Main.NavigationUIVisibility = NavigationUIVisibility.Hidden;
-            Transaction.add(1,1,1);
+            //Transaction.add(1,2,8);
 
             /*Random ran = new Random();
             for (int i = 1; i<=20;i++) {
                 Employee.add(i,"","",i,ran.Next(100000,1000000)); 
             }*/
         }
-        public static void showArrayList(ArrayList DataList)
+        public static string ArrayListTostring(ArrayList DataList)
         {
-            string Data = "    Data\n";
+            string Data = "";
             foreach (string MiniData in DataList)
             {
                 Data += MiniData + "\n";
             }
-            MessageBox.Show(Data);
+            //MessageBox.Show(Data);
+            return Data;
         }
         private bool Menu_Opening;
         private void MenuBut_Click(object sender, RoutedEventArgs e)
@@ -80,13 +81,27 @@ namespace Book_store
 
         private void Transac_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content=null;
+            Main.Content = null;
             Main.Content = new TransactionPage();
+            CloseMenu();
+
         }
 
         private void Back(object sender, RoutedEventArgs e)
         {
             Main.Content = null;
+        }
+        public static bool IsNumber(string S)
+        {
+            char[] charArray=S.ToCharArray();
+            for (int i=0;i<S.Length;i++) 
+            {
+                if (!(charArray[i] == '1'|| charArray[i] == '2'||charArray[i]=='3'|| charArray[i] == '4'|| charArray[i] == '5' || charArray[i] == '6' || charArray[i] == '7' || charArray[i] == '8' || charArray[i] == '9' || charArray[i] == '0' )) 
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }
