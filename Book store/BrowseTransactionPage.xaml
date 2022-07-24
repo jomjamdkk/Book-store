@@ -1,0 +1,48 @@
+﻿<Page x:Class="Book_store.BrowseTransactionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Book_store"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="TransactionPage" MouseWheel="Mouse_Wheel">
+    <Page.Resources>
+        <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="Chrome" BorderBrush="{x:Null}" BorderThickness="2" CornerRadius="2" Background="{TemplateBinding Property=Background}">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid>
+
+        <TextBlock x:Name="ISBNBlock" HorizontalAlignment="Left" Margin="200,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Height="10000" FontSize="24" Text="Test"/>
+        <TextBlock x:Name="CustomerBlock" HorizontalAlignment="Left" Margin="440,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="470" Height="10000" FontSize="24" Text="Test"/>
+        <TextBlock x:Name="DateTimeBlock" HorizontalAlignment="Left" Margin="915,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="10000" FontSize="24" Text="Test"/>
+        <TextBlock x:Name="QuantityBlock" HorizontalAlignment="Left" Margin="1220,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122" Height="10000" FontSize="24" Text="Test"/>
+        <TextBlock x:Name="PriceBlock" HorizontalAlignment="Left" Margin="1425,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Height="10000" FontSize="24" Text="Test"/>
+        <TextBlock x:Name="TotalBlock" HorizontalAlignment="Left" Margin="1635,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" Height="10000" FontSize="24" Text="Test"/>
+        <Rectangle HorizontalAlignment="Center" Height="353" VerticalAlignment="Top" Width="1920" Fill="White"/>
+
+        <Rectangle HorizontalAlignment="Center" Height="2" Margin="0,222,0,0" VerticalAlignment="Top" Width="1800" Fill="#FF70B3FF"/>
+        <Ellipse HorizontalAlignment="Left" Height="75" Margin="100,88,0,0" VerticalAlignment="Top" Width="75" Fill="#FF00D6FF"/>
+        <Ellipse HorizontalAlignment="Left" Height="75" Margin="738,88,0,0" VerticalAlignment="Top" Width="74" Fill="#FF00D6FF"/>
+        <Rectangle HorizontalAlignment="Left" Height="75" Margin="138,88,0,0" VerticalAlignment="Top" Width="642" Fill="#FF00D6FF"/>
+        <Ellipse HorizontalAlignment="Left" Height="48" Margin="112,101,0,0" VerticalAlignment="Top" Width="50" Fill="White"/>
+        <Ellipse HorizontalAlignment="Left" Height="48" Margin="750,101,0,0" VerticalAlignment="Top" Width="50" Fill="White"/>
+        <TextBox x:Name="SearchBox" HorizontalAlignment="Left" Margin="138,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="637" FontSize="36" Height="48" FontFamily="Segoe UI Light" SelectionBrush="#FFFF86C3" SelectionTextBrush="#FFFF0069" BorderBrush="{x:Null}" Foreground="#FF00183E" BorderThickness="0" TextChanged="SearchBox_TextChanged"/>
+        <TextBlock x:Name="Head" HorizontalAlignment="Left" Margin="200,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1700" Height="50" FontSize="40" Text="ISBN              Customer                            Date-Time          Quantity      Price           Total"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1220,115,0,0" TextWrapping="Wrap" Text="Date :XX/XX/XXXX" VerticalAlignment="Top" Height="29" Width="155" FontSize="14" Foreground="#FF868686"/>
+
+
+
+    </Grid>
+
+
+</Page>

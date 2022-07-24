@@ -375,7 +375,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="Back_btn" Content="Back" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Height="38" Width="60" Style="{DynamicResource ButtonStyle1}" Background="#FF00A7FF" Click="Back"/>
+        <Button x:Name="Back_btn" Content="Back" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Height="42" Width="60" Style="{DynamicResource ButtonStyle1}" Background="#FF00A7FF" Click="Back"/>
 
     </Grid>
 </Window>
