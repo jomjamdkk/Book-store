@@ -30,7 +30,8 @@ namespace Book_store
             new Books();
             new Transaction();
             new Employee();
-            Main.NavigationUIVisibility = NavigationUIVisibility.Hidden;
+            Main.NavigationUIVisibility = NavigationUIVisibility.Hidden; //Customers.add(1,"JOMJAM DKK","Chiangmai","jomjamdkk@gmail.com");
+            MessageBox.Show("MaxID = "+Customers.getMaxID().ToString());
             //Transaction.add(1,2,8);
 
             /*Random ran = new Random();
@@ -60,10 +61,10 @@ namespace Book_store
                 OpenMenu();
             }
         }
-        private void BrowseCsData_Click(object sender, RoutedEventArgs e)
+        private void CustomersBTN_Click(object sender, RoutedEventArgs e)
         {
             Main.Content = null;
-            Main.Content = new BrowseCsDataPage();
+            Main.Content = new CustomersPage();
             CloseMenu();
         }
         public void OpenMenu()

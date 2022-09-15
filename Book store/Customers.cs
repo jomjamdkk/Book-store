@@ -84,11 +84,64 @@ namespace Book_store {
                     entries.Add(query.GetString(1));
                     entries.Add(query.GetString(2));
                     entries.Add(query.GetString(3));
+                    
                 }
                 db.Close();
             }
 
             return entries;
+
+        }
+
+
+
+
+
+
+        public static ArrayList getEmail() 
+        {
+            ArrayList entries = new ArrayList();
+            using (SqliteConnection db =
+               new SqliteConnection("Filename=StoreData.db"))
+            {
+                db.Open();
+                SqliteCommand selectCommand = new SqliteCommand
+                    ("SELECT Email from Customers", db);
+                SqliteDataReader query = selectCommand.ExecuteReader();
+                while (query.Read())
+                {
+                    entries.Add(query.GetString(0));
+
+                }
+                db.Close();
+            }
+            return entries;
+        }
+        public static int getMaxID()
+        {
+            ArrayList entries = new ArrayList();
+            using (SqliteConnection db =
+               new SqliteConnection("Filename=StoreData.db"))
+            {
+                db.Open();
+                SqliteCommand selectCommand = new SqliteCommand
+                    ("SELECT Customer_Id from Customers", db);
+                SqliteDataReader query = selectCommand.ExecuteReader();
+                while (query.Read())
+                {
+                    entries.Add(query.GetString(0));
+
+                }
+                db.Close();
+            }
+            int maxID = 0;
+            for (int i = 0; i<entries.Count;i++) 
+            {
+                if (int.Parse(entries[i].ToString())>maxID) 
+                { maxID = int.Parse(entries[i].ToString()); }
+            }
+
+            return maxID;
 
         }
 
@@ -116,7 +169,7 @@ namespace Book_store {
             return entries;
 
         }
-
+        
 
 
 

@@ -1,0 +1,17 @@
+﻿<Page x:Class="Book_store.NewCustomerPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Book_store"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="NewCustomerPage">
+
+    <Grid>
+        <Button x:Name="Confirm_BTN" Content="C&#xD;&#xA;O&#xD;&#xA;N&#xD;&#xA;F&#xD;&#xA;I&#xD;&#xA;R&#xD;&#xA;M" HorizontalAlignment="Left" Margin="600,90,0,0" VerticalAlignment="Top" Height="150" Width="40" FontStyle="Normal" FontSize="13" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="Confirm_BTN_Click"/>
+        <TextBox x:Name="CustomerName_BOX" HorizontalAlignment="Left" Margin="145,90,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="400" Height="25" FontSize="20"/>
+        <TextBox x:Name="CustomerAddress_BOX" HorizontalAlignment="Left" Margin="145,170,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" Width="400" Height="70" FontSize="20"/>
+        <TextBox x:Name="CustomerEmail_BOX" HorizontalAlignment="Left" Margin="145,130,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="400" Height="25" FontSize="20"/>
+    </Grid>
+</Page>

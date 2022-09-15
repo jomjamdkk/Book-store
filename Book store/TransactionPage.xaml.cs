@@ -23,7 +23,7 @@ namespace Book_store
     public partial class TransactionPage : Page
     {
 
-        bool ThePageIsCurrentlyOpen=true;//True means Opening BrowseTransactionPage   False means Opening NewTransactionPag
+        bool ThePageIsCurrentlyOpen_TransactionPage=true;//True means Opening BrowseTransactionPage   False means Opening NewTransactionPag
         public TransactionPage()
         {
             InitializeComponent();
@@ -32,8 +32,8 @@ namespace Book_store
 
         private void TogglePage_Click(object sender, RoutedEventArgs e)
         {
-            ThePageIsCurrentlyOpen = !ThePageIsCurrentlyOpen;
-            if (ThePageIsCurrentlyOpen) { TransactionFrame.Content = new BrowseTransactionPage(); }
+            ThePageIsCurrentlyOpen_TransactionPage = !ThePageIsCurrentlyOpen_TransactionPage;
+            if (ThePageIsCurrentlyOpen_TransactionPage) { TransactionFrame.Content = new BrowseTransactionPage(); }
             else { TransactionFrame.Content = new NewTransactionPage(); }
         }
     }
